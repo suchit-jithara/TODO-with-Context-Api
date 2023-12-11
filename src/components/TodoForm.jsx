@@ -13,6 +13,7 @@ function TodoForm() {
         e.preventDefault();
         if(!todo) return
         addTodo({todo: todo, comleted: false});
+        setTodo("");
     }
 
   return (
@@ -32,4 +33,3 @@ function TodoForm() {
 }
 
 export default TodoForm;
-
